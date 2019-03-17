@@ -23,7 +23,7 @@ class Config
   end
 
   def nginx_installed?
-    exec('nginx -v')['version']
+    ssh.exec!('nginx -v')['version']
   end
 
   def upload_folder(from, to)
