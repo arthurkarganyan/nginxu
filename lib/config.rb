@@ -11,7 +11,7 @@ class Config
     @ssh ||= Net::SSH.start(ip, user, password: password, forward_agent: true)
   end
 
-  def sync
+  def upload
     install_nginx
     sync_sites_enabled
   end
