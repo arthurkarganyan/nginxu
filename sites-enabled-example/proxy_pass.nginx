@@ -1,0 +1,9 @@
+server {
+    server_name  awesome.domain;
+
+    location / {
+        proxy_pass http://127.0.0.1:3000;
+    }
+
+    listen       80;
+}
