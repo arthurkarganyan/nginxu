@@ -11,3 +11,5 @@ gem "activesupport", "~> 5.2"
 gem "pry", "~> 0.12.2"
 
 gem "net-ssh", "~> 5.1"
+
+gem "thor", "~> 0.20.3"
